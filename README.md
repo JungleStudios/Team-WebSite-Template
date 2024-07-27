@@ -215,10 +215,55 @@ handleScrollAnimation();
 ```
 ## Ritocchi Finali
 
-Dopo aver personalizzato il template secondo le tue esigenze, assicurati di testarlo su diversi dispositivi per garantire che sia completamente responsivo e funzionale. Distribuisci il sito su un servizio di hosting web come GitHub Pages, Netlify o Vercel per un facile accesso.
+Dopo aver personalizzato il template secondo le tue esigenze, assicurati di testarlo su diversi dispositivi per garantire che sia completamente funzionale. Puoi distribuire il sito su un servizio di hosting web come GitHub Pages, Netlify, Vercel oppure ospitare il sito da Locale tramite un server web locale come serve o live-server.
+
+### Distribuire su GitHub Pages
+
+1. Crea una nuova repository su GitHub.
+2. Carica tutti i file del tuo progetto nella repository.
+3. Vai nelle impostazioni del repository, scorri fino alla sezione GitHub Pages.
+4. Nella sezione "Source", seleziona il branch principale (main o master) e la cartella root.
+5. Salva le impostazioni. GitHub Pages pubblicherà automaticamente il sito web. 
+
+### Distribuire su Netlify
+
+1. Registra un account su [Netlify](https://www.netlify.com/).
+2. Crea un nuovo sito dal tuo dashboard.
+3. Collega il repository GitHub, GitLab o Bitbucket contenente i file del progetto.
+4. Netlify procederà alla build e alla pubblicazione automatica del sito.
+
+### Distribuire su Vercel
+
+1. Registra un account su [Vercel](https://vercel.com/).
+2. Crea un nuovo progetto e collega il tuo repository GitHub, GitLab o Bitbucket.
+3. Vercel procederà alla build e alla pubblicazione automatica del sito.
+
+### Ospitare il sito da Locale
+
+Se preferisci testare il sito in locale prima di distribuirlo, puoi utilizzare strumenti come `serve` o `live-server`.
+
+#### Usare `serve`
+
+bash
+npx serve .
+
+Questo comando avvierà un server web locale e renderà il sito accessibile nel browser all'indirizzo http://localhost:5000.
+
+#### Usare `live-server`
+
+bash
+npx live-server
+
+Questo comando avvierà un server web locale con supporto per il live-reload, il che significa che il sito verrà ricaricato automaticamente ogni volta che apporterai modifiche ai file.
+
+## Conclusione
+
+Seguendo questa guida, potrai personalizzare e distribuire il template JungleStudios, creando un sito web professionale e accattivante. Assicurati di testare il sito su diversi dispositivi e browser per garantire un'esperienza utente uniforme e di alta qualità.
 
 ---
 
-Seguendo questa guida, puoi adattare il template JungleStudios alle tue esigenze e creare un sito web moderno e responsivo.
+---
+
+Seguendo questa guida, puoi adattare il template JungleStudios alle tue esigenze.
 
 ---
