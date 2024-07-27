@@ -268,3 +268,6 @@ Seguendo questa guida, potrai personalizzare e distribuire il template JungleStu
 Seguendo questa guida, puoi adattare il template JungleStudios alle tue esigenze.
 
 ---
+
+<small>Nota: Il sito mostrato non riflette il nostro sito ufficiale.</small>
+
