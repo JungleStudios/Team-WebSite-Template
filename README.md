@@ -244,17 +244,18 @@ Se preferisci testare il sito in locale prima di distribuirlo, puoi utilizzare s
 
 #### Usare `serve`
 
-bash
+```bash
 npx serve .
+```
 
-Questo comando avvierà un server web locale e renderà il sito accessibile nel browser all'indirizzo http://localhost:5000.
+Il comando avvierà un server web locale e renderà il sito accessibile nel browser all'indirizzo http://localhost:5000.
 
 #### Usare `live-server`
 
-bash
+```bash
 npx live-server
-
-Questo comando avvierà un server web locale con supporto per il live-reload, il che significa che il sito verrà ricaricato automaticamente ogni volta che apporterai modifiche ai file.
+```
+Il comando avvierà un server web locale con supporto per il live-reload, il che significa che il sito verrà ricaricato automaticamente ogni volta che apporterai modifiche ai file.
 
 ## Conclusione
 
