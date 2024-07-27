@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JungleStudios</title>
+  <!-- Adding TailwindCSS... -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+  <!-- Adding Line Awesome... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome.min.css">
   <style>
-    /* Custom animations */
+    /* Animations */
     .fade-in {
       animation: fadeIn 2s ease-in forwards;
     }
@@ -37,18 +39,22 @@
 
   <!-- Header -->
   <header class="bg-green-600 p-6 flex justify-between items-center">
-    <h1 class="text-3xl font-bold">JungleStudios</h1>
+    <h1 class="text-3xl font-bold">JungleStudios</h1> <!-- Change the site name/logo here -->
+    <!--
+    Per usare un'immagine, sostituire la linea sopra con:
+    <h1><img src="path/to/logo.png" alt="JungleStudios Logo" class="h-10"></h1>
+    -->
     <nav>
       <ul class="flex space-x-8">
-        <li><a href="#about" class="hover:text-gray-300">About</a></li>
-        <li><a href="#services" class="hover:text-gray-300">Services</a></li>
-        <li><a href="#portfolio" class="hover:text-gray-300">Portfolio</a></li>
-        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+        <li><a href="#about" class="hover:text-gray-300">About</a></li> <!-- Link di navigazione -->
+        <li><a href="#services" class="hover:text-gray-300">Services</a></li> <!-- Link di navigazione -->
+        <li><a href="#portfolio" class="hover:text-gray-300">Portfolio</a></li> <!-- Link di navigazione -->
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li> <!-- Link di navigazione -->
       </ul>
     </nav>
   </header>
 
-  <!-- About Section -->
+  <!-- About Us -->
   <section id="about" class="h-screen py-12 px-6 fade-in scroll-anim flex items-center">
     <div class="text-center w-full">
       <h2 class="text-4xl font-bold mb-8">About Us</h2>
@@ -56,23 +62,29 @@
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section id="services" class="h-screen py-12 px-6 bg-gray-800 slide-in scroll-anim flex items-center">
     <div class="text-center w-full">
       <h2 class="text-4xl font-bold mb-8">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
         <div class="bg-gray-700 p-8 rounded-lg">
-          <i class="las la-code la-4x text-green-500"></i>
+          <i class="las la-code la-4x text-green-500"></i> <!-- Icona del servizio -->
+          <!--
+          Per cambiare l'icona, visita https://icons8.com/line-awesome
+          Sostituisci "las la-code" con l'icona desiderata. Esempio:
+          <i class="las la-laptop-code la-4x text-green-500"></i>
+		  Stessa cosa per le icone dei servizi sottostanti.
+          -->
           <h3 class="text-3xl font-bold mt-6">Web Development</h3>
           <p class="mt-4 text-lg">High-quality web development services using the latest technologies.</p>
         </div>
         <div class="bg-gray-700 p-8 rounded-lg">
-          <i class="las la-paint-brush la-4x text-green-500"></i>
+          <i class="las la-paint-brush la-4x text-green-500"></i> <!-- Icona del servizio -->
           <h3 class="text-3xl font-bold mt-6">Design</h3>
           <p class="mt-4 text-lg">Creative and modern web design to make your site stand out.</p>
         </div>
         <div class="bg-gray-700 p-8 rounded-lg">
-          <i class="las la-mobile-alt la-4x text-green-500"></i>
+          <i class="las la-mobile-alt la-4x text-green-500"></i> <!-- Icona del servizio -->
           <h3 class="text-3xl font-bold mt-6">Responsive</h3>
           <p class="mt-4 text-lg">Ensuring your site looks great on all devices, from phones to desktops.</p>
         </div>
@@ -80,47 +92,67 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- Portfolio -->
   <section id="portfolio" class="h-screen py-12 px-6 fade-in scroll-anim flex items-center">
     <div class="text-center w-full">
       <h2 class="text-4xl font-bold mb-8">Our Portfolio</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
         <div class="bg-gray-700 p-8 rounded-lg">
-          <img src="https://source.unsplash.com/random/800x600?web" alt="Project 1" class="w-full h-64 object-cover rounded-lg">
-          <h3 class="text-3xl font-bold mt-6">Project One</h3>
+          <img src="https://source.unsplash.com/random/800x600?web" alt="Project 1" class="w-full h-64 object-cover rounded-lg"> <!-- Link immagine progetto -->
+          <!--
+          Per cambiare l'immagine, sostituisci l'URL sopra con il tuo URL. Esempio:
+          <img src="path/to/your/image.jpg" alt="Project 1" class="w-full h-64 object-cover rounded-lg">
+		  Stessa cosa per le immagini sottostanti.
+          -->
+          <h3 class="text-3xl font-bold mt-6">Project One</h3> <!-- Titolo progetto -->
         </div>
         <div class="bg-gray-700 p-8 rounded-lg">
-          <img src="https://source.unsplash.com/random/800x600?tech" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
-          <h3 class="text-3xl font-bold mt-6">Project Two</h3>
+          <img src="https://source.unsplash.com/random/800x600?tech" alt="Project 2" class="w-full h-64 object-cover rounded-lg"> <!-- Link immagine progetto -->
+          <h3 class="text-3xl font-bold mt-6">Project Two</h3> <!-- Titolo progetto -->
         </div>
         <div class="bg-gray-700 p-8 rounded-lg">
-          <img src="https://source.unsplash.com/random/800x600?design" alt="Project 3" class="w-full h-64 object-cover rounded-lg">
-          <h3 class="text-3xl font-bold mt-6">Project Three</h3>
+          <img src="https://source.unsplash.com/random/800x600?design" alt="Project 3" class="w-full h-64 object-cover rounded-lg"> <!-- Link immagine progetto -->
+          <h3 class="text-3xl font-bold mt-6">Project Three</h3> <!-- Titolo progetto -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="h-screen py-12 px-6 bg-gray-800 slide-in scroll-anim flex items-center">
     <div class="text-center w-full">
       <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
       <form action="#" method="POST" class="grid grid-cols-1 gap-4 max-w-2xl mx-auto">
-        <input type="text" name="name" placeholder="Your Name" class="p-4 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-green-500">
-        <input type="email" name="email" placeholder="Your Email" class="p-4 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-green-500">
-        <textarea name="message" placeholder="Your Message" class="p-4 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-green-500"></textarea>
-        <button type="submit" class="bg-green-600 p-4 rounded-lg hover:bg-green-500">Send Message</button>
+        <input type="text" name="name" placeholder="Your Name" class="p-4 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-green-500"> <!-- Campo nome -->
+        <!--
+        Per gestire le informazioni, puoi collegare il form ad un servizio backend o ad un servizio di email. Esempio di integrazione con FormSpree.io:
+        <form action="https://formspree.io/f/{form-id}" method="POST">
+        -->
+        <input type="email" name="email" placeholder="Your Email" class="p-4 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-green-500"> <!-- Campo email -->
+        <textarea name="message" placeholder="Your Message" class="p-4 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-green-500"></textarea> <!-- Campo messaggio -->
+        <button type="submit" class="bg-green-600 p-4 rounded-lg hover:bg-green-500">Send Message</button> <!-- Bottone invio -->
       </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 p-4 text-center text-gray-400">
-    &copy; 2024 JungleStudios. All rights reserved.
+    &copy; 2024 JungleStudios. All rights reserved. <!-- Contenuto footer -->
+    <!--
+    Puoi personalizzare il contenuto del footer aggiungendo link ai social media o altre informazioni. Esempio:
+    <footer class="bg-gray-800 p-4 text-center text-gray-400">
+      &copy; 2024 JungleStudios. All rights reserved.
+      <div class="mt-4">
+        <a href="https://twitter.com/junglestudios" class="text-gray-400 hover:text-white mx-2">Twitter</a>
+        <a href="https://facebook.com/junglestudios" class="text-gray-400 hover:text-white mx-2">Facebook</a>
+        <a href="https://instagram.com/junglestudios" class="text-gray-400 hover:text-white mx-2">Instagram</a>
+      </div>
+    </footer>
+    -->
   </footer>
 
   <script>
-    // Scroll animation
+    // Scroll Animation
     const scrollElements = document.querySelectorAll('.scroll-anim');
 
     const elementInView = (el, dividend = 1) => {
